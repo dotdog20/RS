@@ -14,3 +14,6 @@ unstable = []
 
 [[bin]]
 name = "woodboat"
+
+[dependencies]
+discord = "0.7.0"
