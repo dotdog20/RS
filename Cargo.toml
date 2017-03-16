@@ -17,4 +17,4 @@ name = "woodboat"
 
 [dependencies]
 discord = "0.7.0"
-libsodium-sys = "0.0.14"
+libsodium-sys = "^0.0.12"
