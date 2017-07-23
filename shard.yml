@@ -1,9 +1,9 @@
-name: shard-basic
+name: multicommand
 version: 0.2.0
 authors:
   - t
 targets:
   heroku:
-    main: multicommand.cr
+    main: src/multicommand.cr
 crystal: 0.20.1
 license: Apache-2.0
