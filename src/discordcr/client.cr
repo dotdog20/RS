@@ -1,5 +1,6 @@
 require "http/web_socket"
 require "json"
+require "option_parser"
 
 require "./logger"
 require "./rest"
@@ -105,12 +106,18 @@ module Discord
       @backoff = 115 + (rand * 10) if @backoff > 120 # Cap the backoff at 120 seconds and then add some random jitter
     end
 
+    OptionParser.parse! do |opts|
+      opts.on("-p PORT", "--port PORT", "define port to run server" do |opt|
+        port = opt.to_i
+      end
+    end
+
     private def initialize_websocket : HTTP::WebSocket
       url = URI.parse(get_gateway.url)
       websocket = HTTP::WebSocket.new(
         host: url.host.not_nil!,
         path: "#{url.path}/?encoding=json&v=6",
-        port: 443,
+        port: port,
         tls: true
       )
 
