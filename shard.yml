@@ -1,7 +1,9 @@
-name: discordcr
+name: shard-basic
 version: 0.2.0
-
 authors:
-  - meew0 <blactbt@live.de>
-
-license: MIT
+  - t
+targets:
+  heroku:
+    main: multicommand.cr
+crystal: 0.20.1
+license: Apache-2.0
