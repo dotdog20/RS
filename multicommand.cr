@@ -10,7 +10,7 @@
 require "/src/discordcr"
 
 # Make sure to replace this fake data with actual data when running.
-client = Discord::Client.new(token: "Bot MjI5NDU5NjgxOTU1NjUyMzM3.Cpnz31.GQ7K9xwZtvC40y8MPY3eTqjEIXm", client_id: 229459681955652337_u64)
+client = Discord::Client.new(token: "MjY5MzMzNjgyNjY0MjQzMjAw.DFZgsA.p-pnQ-zD2C1k2K6ek9LhFE_9xP4", client_id: 269333682664243200_u64)
 
 # Command Prefix
 PREFIX = "!"
